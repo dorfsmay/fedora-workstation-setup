@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+# Add french azerty keybaord during login
+# reference: https://help.gnome.org/admin/system-admin-guide/stable/keyboard-layout.html.en
+sudo localectl set-x11-keymap us, fr
+
+# Add french azerty keybaord to user
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'fr+azerty')]"
+# Set keyboard per windows
+gsettings set org.gnome.desktop.input-sources per-window true
+

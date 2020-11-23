@@ -1,0 +1,32 @@
+#!/bin/bash -e
+
+# Get a proper font for the terminal!
+# Install a few good fonts form Ubuntu packages
+#sudo apt install -y fonts-croscore fonts-inconsolata ttf-anonymous-pro fonts-oxygen fonts-hack-ttf
+
+# Install JetBrains Mono
+cd ~/Downloads
+if [[ ! -f JetBrainsMono-1.0.3.zip ]] ; then
+  wget https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip
+fi
+sudo unzip -od /usr/share/fonts ~/Downloads/JetBrainsMono-1.0.3.zip
+
+# Change terminal settings
+# Ref: https://wiki.gnome.org/Apps/Terminal/FAQ
+UUID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
+
+# Set gnome-terminal profile name
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ visible-name installed
+
+# Set gnome-terminal colours - you don't have to like this scheme, but it shows you how to fish!
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ use-theme-colors false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ background-color '#FFFFEE'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ cursor-foreground-color '#000000'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ foreground-color '#000000'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ bold-color-same-as-fg true
+
+# Change gnome-terminal font
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ font 'JetBrains Mono 11'
+fc-cache -f
+
+

@@ -1,0 +1,34 @@
+#!/bin/bash -e
+
+packagetype=${0##*-}
+
+TMPFILE=$(mktemp)
+trap "rm -rf $TMPFILE" EXIT
+
+sudo dnf upgrade --refresh -y
+sudo dnf check-update
+cut -d\# -f1 ../files/packages-$packagetype |grep -v '^$' >$TMPFILE
+sudo xargs -a $TMPFILE dnf install -y
+
+# Post install for audio-video packages from RPM Fusion
+sudo dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf groupupdate -y sound-and-video
+
+sudo dnf autoremove -y
+
+# To avoid the "System program problem detected"
+#### rm -f /var/crash/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+

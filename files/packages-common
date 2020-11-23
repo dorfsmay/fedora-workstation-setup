@@ -1,0 +1,138 @@
+
+## laptops
+tlp
+
+## admin tools
+psmisc
+powertop
+iftop
+atop
+iotop
+htop
+sysstat
+
+# web
+curl
+
+# utils
+the_silver_searcher
+dos2unix
+keepassxc
+ghostscript
+tree
+git
+psmisc
+moreutils
+whois
+pv
+
+
+## editors
+vim
+nano
+nedit
+gedit
+rlwrap
+
+## java
+java-latest-openjdk
+
+# file system
+####gmtp
+####mtp-tools
+# For large SAN disk from cameras
+####exfat-fuse
+####exfat-utils
+
+# office / productivity
+gthumb
+digikam
+thunderbird
+dia
+icoutils
+####openclipart-png
+# wv
+gv
+ghostscript
+#pdfedit
+
+## graphic tools
+GraphicsMagick
+exiv2
+pdfshuffler
+html2ps
+graphviz
+xclip
+
+## graphics gui
+pinta
+####gpaint
+inkscape
+mypaint
+gimp
+gimp-data-extras
+gimp-lensfun
+####gimp-ufraw
+krita
+
+
+## Libreoffice
+## installed by defualt on 18.04
+#libreoffice
+
+# formatters
+asciidoc
+asciidoctor
+
+# spell checker, hyphen, thesaurus
+hunspell
+hunspell-fr
+####hunspell-en-ca
+hunspell-en-GB
+####hyphen-en-us
+####hyphen-fr
+
+
+# browsers
+compat-ffmpeg28 # RPM Fusion - Required for Firefox to play h-264
+firefox
+####browser-plugin-vlc
+chromium-browser-privacy
+
+# ereaders, e-books, ebook
+fbreader
+calibre
+
+# music
+####solfege
+lilypond
+
+## Remote desktops
+rdesktop
+freerdp
+## vnc
+#x11vnc
+#tightvncserver
+#xtightvncviewer
+#directvnc
+
+# edubuntu
+#ubuntu-edu-preschool
+#ubuntu-edu-primary
+#ubuntu-edu-secondary
+#ubuntu-edu-tertiary
+
+# video / sound apps
+youtube-dl
+####recordmydesktop
+audacity
+cheese
+ffmpeg # RPM Fusion
+flac
+sound-juicer
+vorbis-tools
+sox
+lame
+netpbm
+pitivi
+

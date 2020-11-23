@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+# cursor size - 24 is the default, here to document how to change gnome cursor size
+gsettings set org.gnome.desktop.interface cursor-size 24
+
+

@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+# Add close, minimize and maximize button to GNOME windows
+#
+# This can also be changed in GNOME tweak: Windows, Titlebar Buttons → Maximize → ON, Titlebar Buttons → Minimize → ON
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
+# No action on double clicking title bar
+# Can be changed in GNOME tweak: Windows, Titlebar Actions → Double-Click
+gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar "none"
