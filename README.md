@@ -1,4 +1,4 @@
-# Laptop Setup Fedora
+# Fedora Workstation Setup
 
 Install and customize [Fedora Workstation](https://getfedora.org/en/workstation/).
 

@@ -59,18 +59,9 @@
 
 1. Host name and customization
   - open terminal
-  - ```
+  -
+```
 hostnamectl set-hostname some-cool-name
 ```
 
-You can now start customizing. Check the [instructions for the customization scripts](use_scripts.md), or the [scripts themselves](../idempotent).
-
-
-
-
-
-
-
-
-printing
-https://support.brother.com/g/b/downloadlist.aspx?c=ca&lang=en&prod=dcpl2550dw_us&os=127
+You can now start customizing. Check the [instructions for the customization scripts](run_scripts.md), or the [scripts themselves](../idempotent).
