@@ -59,7 +59,7 @@
 
 1. Host name and customization
   - open terminal
-  -
+  - change host name:
 ```
 hostnamectl set-hostname some-cool-name
 ```

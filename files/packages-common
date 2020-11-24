@@ -15,7 +15,9 @@ sysstat
 curl
 
 # utils
+inotify-tools
 the_silver_searcher
+ripgrep
 dos2unix
 keepassxc
 ghostscript
