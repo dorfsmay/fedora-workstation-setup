@@ -5,9 +5,9 @@
 
 1. in a terminal:
 ```
-mkdir -p ~/bin
+mkdir -p ~/.local/bin
 chmod +x ~/Download/pcloud
-mv ~/Download/pcloud ~/bin/.
+mv ~/Download/pcloud ~/.local/bin/.
 ```
 
 ## Upgrade
