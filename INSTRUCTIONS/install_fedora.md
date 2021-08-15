@@ -1,6 +1,6 @@
 # Install Fedora
 
-*Updated on 2020/11/22 for Fedora 33*
+*Updated on 2021/08/15 for Fedora 33*
 
 1. Install Default OS
   - boot from USB
@@ -14,7 +14,7 @@
     - Time & Date
         - Americas / Edmonton
         - "Network Time" Should be enabled, if not, enable it
-        - Done
+        - Done (upper left-hand corner)
 
   - SYSTEM
     - Installation Destination
@@ -22,9 +22,12 @@
         - The disk should already be selected (checkmark)
       - Storage Configuration
         - Advanced Custom
-        - **If** different than goal, delete all partitions
+        - Done
+        - **If** different than goal, delete all partitions (select partition, hit the delete key, or right click + delete)
         - create new (if not already existing):
             - partition, 512 MiB, EFI System Partition, Label: EFI, Moutpoint: /boot/efi
+            - Calculate the size for the main partition by substracting what you want for swap (use 8 GiB for swap if you're not sure)
+            - partition, xxx GiB, EFI System Partition, Label: root, Moutpoint: /
             - partition, size: rest (click on + if needed) , Filesystem: swap, Label: swap
         - Done
         - Accept Changes
@@ -53,12 +56,12 @@
 
 1. Set up X.org
   - LOG OUT
-  - type your username
+  - Click on your username (or type it if it isn't an option)
   - click on the cogwheel/gear symbol at the bottom-right and select "GNOME on Xorg"
   - type your password, and enter
 
 1. Host name and customization
-  - open terminal
+  - open terminal (hit the Windows key, then type `terminal`, then type enter)
   - change host name:
 ```
 hostnamectl set-hostname some-cool-name

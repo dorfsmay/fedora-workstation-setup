@@ -12,7 +12,7 @@ unzip main.zip
 ## Run scripts
 To run all the scripts:
 ```
-cd laptop-setup-fedora/idempotent
+cd fedora-workstation-setup-main/idempotent
 ./runall.bash
 ```
 

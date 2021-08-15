@@ -1,5 +1,11 @@
 # Create a bootable Fedora USB stick on Linux
 
+## On Fedora
+
+Use Fedora Media Writer. To install: `sudo dnf install mediawriter`
+
+## Using the command line
+
 1. Download Fedora Workstation ISO file from <https://getfedora.org/en/workstation/download/>
 
 1. Insert USB stick
