@@ -6,7 +6,7 @@
 
   - Preferences
 
-    - ☰ → Preferences
+    - ☰ → Settings
 
         - Home
 
@@ -21,7 +21,7 @@
                 - deselect everything
         - Privacy & Security
 
-            - Enhanced Tracking Protection: Standard
+            - Enhanced Tracking Protection: **Standard**
 
             - Send websites "do Not Track": Always
 

@@ -6,8 +6,8 @@
 1. in a terminal:
 ```
 mkdir -p ~/.local/bin
-chmod +x ~/Download/pcloud
-mv ~/Download/pcloud ~/.local/bin/.
+chmod +x ~/Downloads/pcloud
+mv ~/Downloads/pcloud ~/.local/bin/.
 ```
 
 ## Upgrade
