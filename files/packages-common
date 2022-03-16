@@ -1,3 +1,5 @@
+# GNOME
+gnome-extensions-app
 
 ## laptops
 tlp
@@ -128,7 +130,7 @@ freerdp
 # video / sound apps
 youtube-dl
 ####recordmydesktop
-audacity
+# audacity
 cheese
 ffmpeg # RPM Fusion
 flac
