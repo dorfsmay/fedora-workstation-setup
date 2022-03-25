@@ -101,7 +101,8 @@ hunspell-en-GB
 compat-ffmpeg28 # RPM Fusion - Required for Firefox to play h-264
 firefox
 ####browser-plugin-vlc
-chromium-browser-privacy
+#chromium-browser-privacy
+chromium-freeworld
 
 # ereaders, e-books, ebook
 foliate
