@@ -24,10 +24,10 @@ sudo dnf install -y dbus-x11
 sudo dnf -y --refresh upgrade
 # Do not list users in GDM3 login screen
 # TODO: investigate how to move this into either /etc/gdm3/custom.conf or /etc/dconf/db/ibus.d
-sudo -Hu gdm dbus-launch gsettings set org.gnome.login-screen disable-user-list true
+sudo -H dbus-launch gsettings set org.gnome.login-screen disable-user-list true
 
 # extra required packages
-sudo dnf install -y gnome-tweaks dconf-editor gnome-shell-extension-topicons-plus
+sudo dnf install -y gnome-tweaks dconf-editor
 
 # install exta wallpapers
 sudo dnf install -y f32-backgrounds-extras-gnome fedora-jam-backgrounds-gnome goddard-backgrounds-gnome heisenbug-backgrounds-extras-gnome heisenbug-backgrounds-gnome laughlin-backgrounds-animated-gnome laughlin-backgrounds-extras-gnome laughlin-backgrounds-gnome lovelock-backgrounds-gnome lovelock-backgrounds-stripes-gnome schroedinger-cat-backgrounds-extras-gnome schroedinger-cat-backgrounds-gnome spherical-cow-backgrounds-extras-gnome spherical-cow-backgrounds-gnome verne-backgrounds-gnome
@@ -37,10 +37,6 @@ sudo dnf install -y f32-backgrounds-extras-gnome fedora-jam-backgrounds-gnome go
 busctl --user call org.gnome.Shell /org/gnome/Shell org.gnome.Shell Eval s 'Meta.restart("Restarting…")'
 # Give time to gnome-shell to finish its restart to avoid the "Failed to connect to GNOME Shell" error
 sleep 10
-
-# Activate topicons-plus and set icons on left hand side
-gsettings set org.gnome.shell.extensions.topicons tray-pos 'left'
-gnome-extensions enable TopIcons@phocean.net
 
 # set background to current peace wallpaper
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/f32/extras/night-sky.jpg

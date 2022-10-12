@@ -1,6 +1,6 @@
 # Install Fedora
 
-*Updated on 2021/08/15 for Fedora 34*
+*Updated on 2022/10/12 for Fedora 36*
 
 1. Install Default OS
   - boot from USB
