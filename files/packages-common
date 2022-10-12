@@ -29,6 +29,7 @@ psmisc
 moreutils
 whois
 pv
+mediawriter
 
 
 ## editors
@@ -78,6 +79,7 @@ gimp-data-extras
 gimp-lensfun
 ####gimp-ufraw
 krita
+darktable
 
 
 ## Libreoffice
