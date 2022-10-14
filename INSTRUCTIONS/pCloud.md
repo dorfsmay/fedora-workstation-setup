@@ -1,7 +1,8 @@
 # pCloud
 
 ## Installation
-1. Download "pCloud Drive for Linux 64bit" from <https://www.pcloud.com/download-free-online-cloud-file-storage.html>
+1. Download "pCloud Drive for Linux 64bit" from <https://www.pcloud.com/download-free-online-cloud-file-storage.html>  
+In "Choose your version", select "Linux 64bit"
 
 1. in a terminal:
 ```

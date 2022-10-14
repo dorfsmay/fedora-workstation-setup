@@ -144,3 +144,7 @@ lame
 netpbm
 pitivi
 
+# Other dependencies
+# perl required for Brother printer driver RPM
+perl
+
