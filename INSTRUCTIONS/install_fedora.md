@@ -1,6 +1,21 @@
 # Install Fedora
+*Updated on 2023/10/11 for Fedora 38*
 
-*Updated on 2022/10/12 for Fedora 36*
+## Note about swap space
+How much swap sapce do you need: short answer, use 8 GiB.
+
+There isn't a universal long answer, unless you know you what hibernate is and you know you will use it, otherwise the answer varies from 8 GiB, to square root of physical memory to 20% of physical memory!
+
+## How to check amount of physical memory during install
+**If**, during the install, you wanted to know  how much memory is installed on your laptop, for example to decide on how much swap space to use, use the folloing steps:
+
+* ctrl-alt-F1
+* use root to login, no passwd
+* `free -h` and note the total for Mem
+* `exit`
+* ctrl-alt-f2
+
+## Install
 
 1. Install Default OS
   - boot from USB
@@ -17,6 +32,8 @@
         - Done (upper left-hand corner)
 
   - SYSTEM
+
+
     - Installation Destination
       - Local Standard Disks
         - The disk should already be selected (checkmark)
@@ -43,6 +60,8 @@
       - Location Services: off
       - Automatic Problem Reporting: on
       - Next
+    - Third-Party Repositories
+      - enable
     - Connect Your Online Accounts
       - skip
     - About You

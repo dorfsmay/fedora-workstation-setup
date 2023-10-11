@@ -39,7 +39,8 @@ busctl --user call org.gnome.Shell /org/gnome/Shell org.gnome.Shell Eval s 'Meta
 sleep 10
 
 # set background to current peace wallpaper
-gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/f32/extras/night-sky.jpg
+## don't... let's use the Fedora default and let the user choose if they don't like it.
+#gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/f32/extras/night-sky.jpg
 
 sudo dnf -y --refresh upgrade
 
