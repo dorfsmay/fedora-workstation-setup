@@ -3,7 +3,7 @@
 Install and customize [Fedora Workstation](https://getfedora.org/en/workstation/).
 
 ## Customization
-The [instructions](./INSTRUCTIONS) and [scripts](idempotent) are specific to my needs and differ from a default setup:
+The [instructions](./INSTRUCTIONS/README.md) and [scripts](idempotent) are specific to my needs and differ from a default setup:
 * using standard partitions instead of LVM
 * using ext4 instead of brtfs
 * /boot on the root partition

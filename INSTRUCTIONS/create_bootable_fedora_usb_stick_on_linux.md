@@ -2,7 +2,26 @@
 
 ## On Fedora
 
-Use Fedora Media Writer. To install: `sudo dnf install mediawriter`
+**This is the easier method**.
+
+* Use Fedora Media Writer. To install: `sudo dnf install mediawriter`
+* hit the meta key (key on the left side of the left Alt key), and type `mediawriter` in the seachr bar, followed by the enter key
+
+Once the mediawriter is runing:
+
+* "Download automatically"
+* Official Editions
+* Write Options
+    * Version: current version (eg: 38)
+    * Hardware Architecture: Intel/AMD 64bit
+    * USB Drive: the USB drive you inserted - **this will destroy everything on your USB stick**
+* click on the "Write" button
+
+Once finished:
+
+* In File Manage (Nautilus), click on the USB dirve labeleed "Fedora-WS-Live" and eject. Accept to tempty trash if prompted
+* remove drive
+
 
 ## Using the command line
 
@@ -10,7 +29,7 @@ Use Fedora Media Writer. To install: `sudo dnf install mediawriter`
 
 1. Insert USB stick
 
-1. Use `lsblk -S` `df -Th` to find which device is Linux using for your USB device
+1. Use `lsblk -S` to find which device is Linux using for your USB device
 
 1. **WARNING**: *The following step will* **destroy** *the content of* `/dev/sd�*`
     ```
