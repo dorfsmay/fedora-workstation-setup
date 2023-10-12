@@ -4,7 +4,7 @@
 
 **This is the easier method**.
 
-* Use Fedora Media Writer. To install: `sudo dnf install mediawriter`
+* Use Fedora Media Writer. To install type the following in a terminal: `sudo dnf install mediawriter`
 * hit the meta key (key on the left side of the left Alt key), and type `mediawriter` in the seachr bar, followed by the enter key
 
 Once the mediawriter is runing:
