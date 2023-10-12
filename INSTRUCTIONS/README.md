@@ -13,4 +13,4 @@
 
 * Regular updates
 
-* Upgrade to a new Fedora version
+* [Upgrade to a new Fedora version](upgrade-fedora.md)
