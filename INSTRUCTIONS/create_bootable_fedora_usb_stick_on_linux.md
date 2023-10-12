@@ -4,13 +4,14 @@
 
 **This is the easier method**.
 
-* Use Fedora Media Writer. To install type the following in a terminal: `sudo dnf install mediawriter`
+* Use Fedora Media Writer. To install type the following in a terminal: `sudo dnf install -y mediawriter`
 * hit the meta key (key on the left side of the left Alt key), and type `mediawriter` in the seachr bar, followed by the enter key
 
 Once the mediawriter is runing:
 
 * "Download automatically"
 * Official Editions
+    * Fedora Workstation
 * Write Options
     * Version: current version (eg: 38)
     * Hardware Architecture: Intel/AMD 64bit
