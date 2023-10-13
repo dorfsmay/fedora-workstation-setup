@@ -135,7 +135,9 @@ youtube-dl
 ####recordmydesktop
 # audacity
 cheese
-ffmpeg # RPM Fusion
+##ffmpeg # RPM Fusion
+ffmpeg-free
+libavcodec-freeworld
 flac
 sound-juicer
 vorbis-tools
