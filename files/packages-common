@@ -150,3 +150,7 @@ pitivi
 # perl required for Brother printer driver RPM
 perl
 
+# Android connection (needs KDE Connect on the Android device)
+gnome-shell-extension-gsconnect
+nautilus-gsconnect
+webextension-gsconnect
