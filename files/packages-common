@@ -60,6 +60,8 @@ icoutils
 gv
 ghostscript
 #pdfedit
+# Good to anotate pdf with tablet
+xournalpp
 
 ## graphic tools
 GraphicsMagick
