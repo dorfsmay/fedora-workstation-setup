@@ -12,6 +12,7 @@ atop
 iotop
 htop
 sysstat
+lsb_release
 
 # web
 curl
