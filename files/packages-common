@@ -121,6 +121,7 @@ lilypond
 ## Remote desktops
 rdesktop
 freerdp
+remmina
 ## vnc
 #x11vnc
 #tightvncserver
