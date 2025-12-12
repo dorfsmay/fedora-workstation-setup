@@ -1,5 +1,5 @@
 # Install Fedora
-*Updated on 2023/10/11 for Fedora 38*
+*Updated on 2025/12/12 for Fedora 43*
 
 ## Note about swap space
 How much swap sapce do you need: short answer, use 8 GiB.
@@ -32,8 +32,6 @@ There isn't a universal long answer, unless you know you what hibernate is and y
         - Done (upper left-hand corner)
 
   - SYSTEM
-
-
     - Installation Destination
       - Local Standard Disks
         - The disk should already be selected (checkmark)
@@ -72,12 +70,6 @@ There isn't a universal long answer, unless you know you what hibernate is and y
       - *not password*
       - Next
    - Start Using Fedora
-
-1. Set up X.org
-  - LOG OUT
-  - Click on your username (or type it if it isn't an option)
-  - click on the cogwheel/gear symbol at the bottom-right and select "GNOME on Xorg"
-  - type your password, and enter
 
 1. Host name and customization
   - open terminal (hit the Windows key, then type `terminal`, then type enter)

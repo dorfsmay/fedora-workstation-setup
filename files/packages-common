@@ -13,6 +13,7 @@ iotop
 htop
 sysstat
 lsb_release
+nmtui
 
 # web
 curl

@@ -11,8 +11,8 @@ cut -d\# -f1 ../files/packages-$packagetype |grep -v '^$' >$TMPFILE
 sudo xargs -a $TMPFILE dnf install -y
 
 # Post install for audio-video packages from RPM Fusion
-sudo dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf groupupdate -y sound-and-video
+sudo dnf group install -y multimedia --exclude=PackageKit-gstreamer-plugin
+sudo dnf group install -y sound-and-video
 
 sudo dnf autoremove -y
 
