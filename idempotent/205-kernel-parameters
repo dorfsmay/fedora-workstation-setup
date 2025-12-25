@@ -4,7 +4,11 @@
 sudo echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf
 
 # swappiness
-sudo sysctl -w vm.swappiness=10
-sudo  echo vm.swappiness=10 | sudo tee /etc/sysctl.d/41-swappiness.conf
+sudo echo vm.swappiness=10 | sudo tee /etc/sysctl.d/41-swappiness.conf
+
+# ipv6 ramdom temp addresses
+sudo echo net.ipv6.conf.all.use_tempaddr=2 | sudo tee /etc/sysctl.d/42-ipv6-use-tempaddr.conf
+sudo echo net.ipv6.conf.default.use_tempaddr=2 | sudo tee -a /etc/sysctl.d/42-ipv6-use-tempaddr.conf
+sudo echo net.ipv6.conf.wlp3s0.use_tempaddr=2 | sudo tee -a /etc/sysctl.d/42-ipv6-use-tempaddr.conf
 
 sudo sysctl --system
