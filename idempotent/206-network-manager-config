@@ -1,6 +1,0 @@
-#!/bin/bash -e
-
-# ipv6-privacy
-HERE=$(dirname $0)
-sudo ${HERE}/network-manager-config.py
-
