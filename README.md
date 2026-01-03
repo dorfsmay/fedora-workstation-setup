@@ -21,6 +21,9 @@ It was a conscious decision to use GNU Bash as the programming language despite 
 
 * Perennity: [Bash has been around for a long time, since 1988](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\)#History) (note: [Linux was created in 1991](https://en.wikipedia.org/wiki/Linux#Creation)). [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect) predicts that it will be around for at least another 30 years.
 
+## Other Fedora customization pages
 
+* https://github.com/wz790/Fedora-Noble-Setup
 
+* https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
 
