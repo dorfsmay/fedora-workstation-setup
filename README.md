@@ -7,8 +7,7 @@ The [instructions](./INSTRUCTIONS/README.md) and [scripts](idempotent) are speci
 * using standard partitions instead of LVM
 * using ext4 instead of brtfs
 * /boot on the root partition
-* defaults to X.org instead of Wayland
-* gnome customization???
+* gnome customization
 * set default local language to en\_CA.UTF-8 (canadian English)
 * Setup dual language keyboard for English and French
 * Change GNOME terminal to dark-on-light mode
