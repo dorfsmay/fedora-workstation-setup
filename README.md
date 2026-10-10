@@ -27,3 +27,31 @@ It was a conscious decision to use GNU Bash as the programming language despite 
 
 * https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
 
+## Upgrading from Fedora 43 to Fedora 44
+* in a terminal and run:
+  ```
+  hostnamectl
+  ```
+  Ensure the "Operating System" is "Fedora Linux 43". **Do not proceed** if it is a different name or version.
+* in a terminal, run:  
+  ```
+  sudo dnf upgrade --refresh
+  ```
+* reboot
+* open a terminal and run - the last step takes a while. Run this while on wifi, do **not** run it while on phone data plan:
+  ```
+  sudo dnf install dnf-plugin-system-upgrade
+  sudo dnf remove tlp
+  sudo dnf system-upgrade download --releasever=44
+  ```
+* Once the step above is complete, run:  
+  ```
+  sudo dnf system-upgrade reboot
+  ```
+  The machine will reboot and spend some time upgrading all the packages.
+* Once you can log back in, open a terminal and run:
+  ```
+  systemctl --user stop localsearch-3.service
+  systemctl --user mask localsearch-3.service
+  gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+  ```
