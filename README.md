@@ -54,4 +54,12 @@ It was a conscious decision to use GNU Bash as the programming language despite 
   systemctl --user stop localsearch-3.service
   systemctl --user mask localsearch-3.service
   gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+  sudo dnf install @workstation-product-environment
   ```
+
+#### Optional: terminal preferences
+* preferences, at the top, click left-handed circle (Follow System Style)
+* preferences, preferences, Appearance tab, click on "All Palettes", select "Everforest"
+* preferences, preferences, Behavior tab:
+  * Restore Window Size, off
+  * Shell, Use Login Shell
