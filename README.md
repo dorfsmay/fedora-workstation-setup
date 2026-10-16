@@ -58,8 +58,19 @@ It was a conscious decision to use GNU Bash as the programming language despite 
   ```
 
 #### Optional: terminal preferences
-* preferences, at the top, click left-handed circle (Follow System Style)
-* preferences, preferences, Appearance tab, click on "All Palettes", select "Everforest"
-* preferences, preferences, Behavior tab:
-  * Restore Window Size, off
-  * Shell, Use Login Shell
+* super key, "terminal" to open terminal, then click on hamburger button (≡) and:
+  * preferences, at the top, click left-handed circle (Follow System Style)
+  * preferences, preferences, Appearance tab, click on "All Palettes", select "Everforest"
+  * preferences, preferences, Behavior tab:
+    * Interface
+      * Restore Session, off
+      * Restore Window Size, off
+    * Shell, Use Login Shell
+* super key, "settings"
+  * keyboard, View and Customize Shortcuts
+  * search for "terminal"
+    * edit (pencil button 🖉) then proceed setting up the same as beloow
+  * if not there, click on "Custom Shortcuts, "Add Shortcut..."
+    * Name: Terminal
+    * Command: `ptyxis --standalone`
+    * Shortcut: `Ctrl` + `Alt` + `T`
